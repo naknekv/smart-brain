@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 class Register extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       email: '',
       password: '',
@@ -36,7 +36,7 @@ class Register extends React.Component {
       .then(user => {
         if (user.id) {
           this.props.loadUser(user)
-          this.props.onRouteChange('home');
+          this.props.onRouteChange('home')
         }
       })
   }
@@ -90,8 +90,8 @@ class Register extends React.Component {
           </div>
         </main>
       </article>
-    );
+    )
   }
 }
 
-export default Register;
+export default Register
